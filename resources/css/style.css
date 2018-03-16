@@ -1,78 +1,88 @@
 body {
   font-family: Open Sans;
-  background-color: #09092a;
+  background-color: #99A0CF;
   color: #F0FFFF;
 }
 
 #nav-edit {
-  background-color: #f8f8f8;
-  color: #399bd1;
+  background-color: #616683;
+  color: #F0FFFF;
 }
 
 .navbar {
   margin-bottom: 0;
+  background-color: #616683;
 }
 
 main {
-  margin-top: 50px;
+  /*box-sizing: border-box;*/
+  padding-top: 20rem;
+  height: 60rem;
 }
 
-/*.jumbotron {
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex !important;
+main h1 {
+  margin-top: 0;
+  font-size: 6.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.flex {
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.jumbotron p {
-  padding-bottom: 10rem;
+main h2 {
+  margin-bottom: 0;
 }
 
-.jumbotron-bike {
-  background-image: url("../images/jumbotron-bike.jpg");
+main img {
+  height: 19rem;
+  padding-left: 2rem;
 }
 
-.jumbotron-beer {
-  background-image: url("../images/jumbotron-beer.jpg");
+@media only screen and (min-width: 768px) {
+  main {
+    padding-top: 13rem;
+  }
+  main h1 {
+    font-size: 10rem;
+  }
+  main h2 {
+    font-size: 5rem;
+  }
+  main img {
+    height: 28rem;
+  }
 }
-
-.jumbotron-flowers {
-  background-image: url("../images/jumbotron-flowers.jpg");
-}
-
-.jumbotron-duffel {
-  background-image: url("../images/jumbotron-duffel.jpg");
-}
-
-
-.jumbotron h1 {
-  font-family: Monoton;
-  font-size: 7.1rem;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}*/
 
 .image-container {
   overflow: hidden;
 }
 
-section img {
-  height: 40rem;
+.image-container img {
   opacity: 0.9;
   transition-duration: 0.5s;
 }
 
-section img:hover {
+.image-container img:hover {
   opacity: 1;
   transform: scale(1.1);
 }
 
-section h1 {
-  font-size: 6.5rem;
-  font-weight: 700;
+section {
+  background-color: #5B6CCF;
+  padding-top: 10rem;
+}
+
+section.experience p {
+  line-height: 2;
+  font-size: 1.8rem;
+}
+
+section.projects img{
+  width: 100%;
 }
 
 footer {
